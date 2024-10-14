@@ -105,6 +105,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasWorldview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasWorldview">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -286,6 +295,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Абберация">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Абсолютно чужеродные существа. Многие из них имеют врождённые магические способности, однако обусловлены они их чужеродным разумом, а не мистическими силами мира.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -327,6 +337,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Великан">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Древние империи когда-то отбрасывали длинные тени на мир, который сотрясался под ногами великанов. В те потерянные дни эти величественные фигуры были драконоубийцами, мечтателями, ремесленниками и царями, но время славы их расы давно прошло. Тем не менее, даже разделённые на закрытые кланы и разбросанных по всему миру, великаны сохранили старые традиции и обычаи.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -351,6 +362,7 @@
         <untitled-ontology-14:hasRank rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#15"/>
         <untitled-ontology-14:hasSize rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огромный"/>
         <untitled-ontology-14:hasType rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дракон"/>
+        <untitled-ontology-14:hasWorldview rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Законопослушный_злой"/>
         <untitled-ontology-14:hasArmor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</untitled-ontology-14:hasArmor>
         <untitled-ontology-14:hasCha rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</untitled-ontology-14:hasCha>
         <untitled-ontology-14:hasCon rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</untitled-ontology-14:hasCon>
@@ -424,6 +436,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Гуманоид">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Это все основные народы мира D&amp;D, и цивилизованные и дикие, они очень разнообразны по видам. Они обладают языком и культурой, некоторые имеют врождённые магические способности (хотя большинство гуманоидов может обучиться накладыванию заклинаний). Они двуноги.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -448,6 +461,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дракон">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Крылатые рептилии древнего рода и ужасающей силы — вот кто такие истинные драконы. Они известны, и их боятся за хищную хитрость и жадность, а древнейшие из драконов считаются одними из наиболее могучих существ в мире. Драконы это ещё и магические существа, чьи врождённые способности питают их смертоносное дыхание и другие необычные возможности.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -504,6 +518,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Зверь">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Это негуманоидные существа, являющиеся фауной мира фэнтези. Некоторые из них имеют магические силы, но большая часть неразумна, не владеет языками и не имеет никакого общественного строя. Звери включают в себя всё многообразие животных, динозавров и гигантских версий животных.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -568,6 +583,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Исчадие">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Злобные существа, обитающие на Нижних Планах. Некоторые из них служит богам, но многие в подчинении у архидьяволов и демонических повелителей. Злые жрецы и маги иногда призывают исчадий в материальный мир, чтобы те выполнили их желания. Если среди небожителей зло — это редкость, то встретить доброе исчадие практически невозможно.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -592,6 +608,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Конструкт">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Создаются, а не рождаются. Некоторые запрограммированы создателем следовать простому набору инструкций, другие же имеют зачатки разума и способны к самостоятельному мышлению. Големы — это классические конструкты. Многие существа родом из внешнего плана Механус, такие как модроны, являются конструктами, созданными из материи этого плана волей могущественных существ.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -626,6 +643,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Монстр">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Это чудовища в абсолютном смысле этого слова. Это жуткие чудища, обычно с неестественным происхождением, и напрочь лишённые милосердия. Некоторые — результат магических экспериментов, которые пошли не так, как задумано (например, совомеды), другие — порождение страшных проклятий (например, минотавры или юань-ти). Любое такое существо сложно классифицировать, и, в некотором роде, это универсальная категория для существ, которые не вписываются в любой другой вид.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -642,9 +660,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Небожитель">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
-        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Рубящий"/>
-        <untitled-ontology-14:hasLanguage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Общий"/>
-        <untitled-ontology-14:hasType rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Небожитель"/>
+        <rdfs:comment>Небожители — это существа из Верхних Планов.
+
+Многие из них являются слугами божеств, и выполняют роль посланников и агентов в мире смертных и других планах. Небожители добры от природы, поэтому небожитель, сбившийся с пути добра, это ужасная редкость. К небожителям относятся ангелы, коатли и пегасы.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -669,6 +687,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нежить">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Нежить — это бывшие живые существа, которые приняли такое состояние либо из-за магии некромантии, либо из-за нечестивого проклятья. К нежити относятся ходячие трупы, например, вампиры и зомби, а также бесплотные духи, например, приведения и спектры.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -878,6 +897,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Растение">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Растения, в контексте вида монстров, — это растительные создания, а не обычная флора. Большая часть из них подвижна, а некоторые и плотоядны. Типичные растения — это ползающие насыпи и тренты. Грибковые существа, такие как газовые споры или микониды, также попадают в эту категорию.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -926,6 +946,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Слизь">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Слизь хорошо чувствует себя в темноте, избегая солнечных областей и экстремальных температур. Она течёт по влажным подземельям, питаясь всем, что можно растворить, крадётся по земле, капает со стен и потолков, собирается у краёв подземных бассейнов и просачивается через щели. Первым предупреждением для искателя приключений о присутствия слизи является жгучая боль от её кислотного касания.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -943,6 +964,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Стая_крошечных_зверей">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Рой - это скопление различных существ которые перемещаются и атакуют одновременно.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -967,6 +989,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Фея">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Феи — магические существа, тесно связанные с силами природы. Они живут в сумрачных рощах и туманных лесах. В некоторых мирах они тесно связаны со Страной Фей, которую также называют Планом Фей. Некоторые из них встречаются во Внешних Планах, в частности, на Арборее или в Звериных Землях. К феям относятся дриады, пикси и сатиры.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1023,6 +1046,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Элементаль">
         <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Элементали — это воплощения стихий, которые составляют вселенную: воздух, земля, огонь и вода. Являясь чуть более, чем живой энергией на своих родных планах существования, они могут быть призваны заклинателями и могущественными существами, чтобы принять определённую форму и исполнять поручения.</rdfs:comment>
     </owl:NamedIndividual>
     
 
