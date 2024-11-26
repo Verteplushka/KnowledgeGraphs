@@ -683,6 +683,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Лорд_мумия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Лорд_мумия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Некротический"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ядовитый"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Испуганный"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Истощенный"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Отравленный"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Очарованный"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Парализованный"/>
+        <untitled-ontology-14:hasLocation rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Подземелья"/>
+        <untitled-ontology-14:hasRank rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#15"/>
+        <untitled-ontology-14:hasSize rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Средний"/>
+        <untitled-ontology-14:hasType rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нежить"/>
+        <untitled-ontology-14:hasVulnerabilityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огненный"/>
+        <untitled-ontology-14:hasCha rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-14:hasCha>
+        <untitled-ontology-14:hasCon rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</untitled-ontology-14:hasCon>
+        <untitled-ontology-14:hasDex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-14:hasDex>
+        <untitled-ontology-14:hasHp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97</untitled-ontology-14:hasHp>
+        <untitled-ontology-14:hasInt rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</untitled-ontology-14:hasInt>
+        <untitled-ontology-14:hasStr rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</untitled-ontology-14:hasStr>
+        <untitled-ontology-14:hasWis rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</untitled-ontology-14:hasWis>
+    </owl:NamedIndividual>
+    
+
+
+ 4fddd83cfa67b1d2ac137c3e3dd634d4dd986ea4
     <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Маленький -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Маленький">
