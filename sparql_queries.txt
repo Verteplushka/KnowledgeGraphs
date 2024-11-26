@@ -1,4 +1,4 @@
-# 1.Какие монстры типа "нежить" обладают статусом "невидимый" и уровнем выше 10?
+# 1.Какие монстры типа "нежить" обладают уровнем 15?
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX ont: <http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#>
