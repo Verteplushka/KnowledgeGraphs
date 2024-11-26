@@ -1,0 +1,1557 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14/"
+     xml:base="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-14="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasExtraStates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasExtraStates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasImmunityToDamage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasImmunityToDamage">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasVulnerabilityToDamage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasImmunityToState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasImmunityToState">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasLanguage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasRank -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasRank">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasResistanceToDamage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasResistanceToDamage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasVulnerabilityToDamage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasVulnerabilityToDamage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasWorldview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasWorldview">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasArmor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasArmor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasCha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasCha">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasCon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasCon">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasDex -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasDex">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasHp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasHp">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasInt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasInt">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasRankEx -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasRankEx">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasSizeCell -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasSizeCell">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasStr -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasStr">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasWis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#hasWis">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Абберация -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Абберация">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Абсолютно чужеродные существа. Многие из них имеют врождённые магические способности, однако обусловлены они их чужеродным разумом, а не мистическими силами мира.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Бездны -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Бездны">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Бессознательный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Бессознательный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <untitled-ontology-14:hasExtraStates rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Недееспособный"/>
+        <untitled-ontology-14:hasExtraStates rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Сбитый_с_ног"/>
+        <rdfs:comment>Находящееся без сознания существо недееспособно (не может совершать Действия и Реакции), не способно перемещаться и говорить, а также не осознаёт своё окружение.
+Существо роняет всё, что держит, и падает ничком.
+Существо автоматически проваливает спасброски Силы и Ловкости.
+Броски атаки по существу совершаются с преимуществом.
+Любая атака, попавшая по такому существу, считается критическим попаданием, если нападающий находится в пределах 5 футов от него.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Болото -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Болото">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Большой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Большой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+        <untitled-ontology-14:hasSizeCell rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-14:hasSizeCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Великан -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Великан">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Древние империи когда-то отбрасывали длинные тени на мир, который сотрясался под ногами великанов. В те потерянные дни эти величественные фигуры были драконоубийцами, мечтателями, ремесленниками и царями, но время славы их расы давно прошло. Тем не менее, даже разделённые на закрытые кланы и разбросанных по всему миру, великаны сохранили старые традиции и обычаи.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Великаний -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Великаний">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Взрослый_зелёный_дракон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Взрослый_зелёный_дракон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ядовитый"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Отравленный"/>
+        <untitled-ontology-14:hasLanguage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Драконий"/>
+        <untitled-ontology-14:hasLanguage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Общий"/>
+        <untitled-ontology-14:hasLocation rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Лес"/>
+        <untitled-ontology-14:hasRank rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#15"/>
+        <untitled-ontology-14:hasSize rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огромный"/>
+        <untitled-ontology-14:hasType rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дракон"/>
+        <untitled-ontology-14:hasWorldview rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Законопослушный_злой"/>
+        <untitled-ontology-14:hasArmor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</untitled-ontology-14:hasArmor>
+        <untitled-ontology-14:hasCha rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17</untitled-ontology-14:hasCha>
+        <untitled-ontology-14:hasCon rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</untitled-ontology-14:hasCon>
+        <untitled-ontology-14:hasDex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-14:hasDex>
+        <untitled-ontology-14:hasHp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">207</untitled-ontology-14:hasHp>
+        <untitled-ontology-14:hasInt rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</untitled-ontology-14:hasInt>
+        <untitled-ontology-14:hasStr rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</untitled-ontology-14:hasStr>
+        <untitled-ontology-14:hasWis rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</untitled-ontology-14:hasWis>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Воровской_жаргон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Воровской_жаргон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Глубинная_Речь -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Глубинная_Речь">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Гномий -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Гномий">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Гоблинский -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Гоблинский">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Город -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Город">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Горы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Горы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Громадный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Громадный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+        <untitled-ontology-14:hasSizeCell rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-14:hasSizeCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Гуманоид -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Гуманоид">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Это все основные народы мира D&amp;D, и цивилизованные и дикие, они очень разнообразны по видам. Они обладают языком и культурой, некоторые имеют врождённые магические способности (хотя большинство гуманоидов может обучиться накладыванию заклинаний). Они двуноги.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дварфский -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дварфский">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Деревня -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Деревня">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дракон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дракон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Крылатые рептилии древнего рода и ужасающей силы — вот кто такие истинные драконы. Они известны, и их боятся за хищную хитрость и жадность, а древнейшие из драконов считаются одними из наиболее могучих существ в мире. Драконы это ещё и магические существа, чьи врождённые способности питают их смертоносное дыхание и другие необычные возможности.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Драконий -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Драконий">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дробящий -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дробящий">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Друидический_язык -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Друидический_язык">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Законопослушный_добрый -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Законопослушный_добрый">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>Законопослушный добрый персонаж полон сострадания и знает, что такое честь. Он противостоит злу, которое пытается уничтожить привычные устои. Они верны своему слову и считают, что власть должна служить народу. Вы наверняка слышали фразу: «он хороший человек».</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Законопослушный_злой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Законопослушный_злой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>В D&amp;D есть целая раса и целый План, который подчиняется этому мировоззрению. Это Девять Кругов Ада, в котором живут дьяволы. Они знают, что такое иерархия и всячески следуют ее законам, однако это не мешает им убивать демонов и обычных смертных. Они заботятся только о себе, но структура – это единственное, что удерживает их от падения в пучину хаоса. Тоже самое касается и обычных персонажей, только в более скромных масштабах.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Законопослушный_нейтральный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Законопослушный_нейтральный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>Личные кодексы, правила организации и законы все еще играют важную роль в принятии решений, однако нет слепого фанатизма против зла. Если речь заходит о власти, то такие персонажи считают, что народ и авторитеты созависимы.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Зверь -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Зверь">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Это негуманоидные существа, являющиеся фауной мира фэнтези. Некоторые из них имеют магические силы, но большая часть неразумна, не владеет языками и не имеет никакого общественного строя. Звери включают в себя всё многообразие животных, динозавров и гигантских версий животных.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Звуковой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Звуковой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Излучение -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Излучение">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Импровизированный_урон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Импровизированный_урон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Инфернальный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Инфернальный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Испуганный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Испуганный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Испуганное существо совершает с помехой проверки характеристик и броски атаки, пока источник его страха находится в пределах его линии обзора.
+Существо не способно добровольно приблизиться к источнику своего страха.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Истинно_нейтральный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Истинно_нейтральный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>К этим ребятам принадлежат люди, которых чаще всего называют «третьей стороной». Если они и участвуют в конфликтах, то держатся особняком и не присоединяются ни к кому. Считается, что это мировоззрение отлично подходит для тех, кто не может решить, что их влечет больше — добро или зло, закон или хаос. Их не отягощает груз эмоций и привязанностей, а четкие рамки закона для них не важны.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Истощенный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Истощенный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Степень	Эффект
+1	Помеха при проверках характеристик
+2	Скорость уменьшается вдвое
+3	Помеха при бросках атаки и спасбросках
+4	Максимум хитов уменьшается вдвое
+5	Скорость снижается до 0
+6	Смерть
+Некоторые особые способности и опасности окружающей среды, такие как недоедание и длительное воздействие очень низких или высоких температур, могут стать причиной состояния, называемого истощением.
+
+Истощение делится на шесть степеней. Эффект даёт существу ту или иную степень истощения, согласно описанию.
+
+Если существо, уже находящееся в состоянии истощения, подвергается воздействию другого эффекта, вызывающего истощение, его текущая степень истощения повышается на значение, указанное в описании эффекта.
+
+На существо воздействуют эффекты не только текущей степени истощения, но и более слабых степеней. 
+
+Например, существо на 2 степени истощения перемещается в два раза медленнее и совершает с помехой проверки характеристик.
+
+Эффект, снимающий истощение, понижает его степень согласно описанию эффекта, вплоть до окончания действия истощения, если степень истощения существа становится ниже 1.
+
+Продолжительный отдых снижает степень истощения на 1, при условии, что существо что-нибудь съесть и выпьет.
+
+Кроме того, если существо вернули к жизни, его уровень истощения снижается на 1</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Исчадие -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Исчадие">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Злобные существа, обитающие на Нижних Планах. Некоторые из них служит богам, но многие в подчинении у архидьяволов и демонических повелителей. Злые жрецы и маги иногда призывают исчадий в материальный мир, чтобы те выполнили их желания. Если среди небожителей зло — это редкость, то встретить доброе исчадие практически невозможно.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Кислотный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Кислотный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Колющий -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Колющий">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Конструкт -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Конструкт">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Создаются, а не рождаются. Некоторые запрограммированы создателем следовать простому набору инструкций, другие же имеют зачатки разума и способны к самостоятельному мышлению. Големы — это классические конструкты. Многие существа родом из внешнего плана Механус, такие как модроны, являются конструктами, созданными из материи этого плана волей могущественных существ.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Крошечный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Крошечный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+        <untitled-ontology-14:hasSizeCell rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</untitled-ontology-14:hasSizeCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Лес -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Лес">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Маленький -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Маленький">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+        <untitled-ontology-14:hasSizeCell rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-14:hasSizeCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Монстр -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Монстр">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Это чудовища в абсолютном смысле этого слова. Это жуткие чудища, обычно с неестественным происхождением, и напрочь лишённые милосердия. Некоторые — результат магических экспериментов, которые пошли не так, как задумано (например, совомеды), другие — порождение страшных проклятий (например, минотавры или юань-ти). Любое такое существо сложно классифицировать, и, в некотором роде, это универсальная категория для существ, которые не вписываются в любой другой вид.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Небесный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Небесный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Небожитель -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Небожитель">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Небожители — это существа из Верхних Планов.
+
+Многие из них являются слугами божеств, и выполняют роль посланников и агентов в мире смертных и других планах. Небожители добры от природы, поэтому небожитель, сбившийся с пути добра, это ужасная редкость. К небожителям относятся ангелы, коатли и пегасы.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Невидимый -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Невидимый">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Невидимое существо невозможно увидеть без помощи магии или особого чувства. С точки зрения скрытности существо считается сильно заслонённым. Местонахождение существа можно определить по шуму, который оно издаёт, или по оставленным им следам.
+Броски атаки по невидимому существу совершаются с помехой, а его броски атаки — с преимуществом.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Недееспособный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Недееспособный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Недееспособное существо не может совершать Действия и Реакции.
+Вы автоматически проваливаете проверки против Толчка и Захвата.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нежить -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нежить">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Нежить — это бывшие живые существа, которые приняли такое состояние либо из-за магии некромантии, либо из-за нечестивого проклятья. К нежити относятся ходячие трупы, например, вампиры и зомби, а также бесплотные духи, например, приведения и спектры.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нейтральный_добрый -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нейтральный_добрый">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>В этом случае законы отходят на второй план. Такие персонажи часто не знают, какую сторону противостояния выбрать, потому что не могут определиться, что лучше – закон или хаос. Они видят слабые и сильные стороны обеих сторон, поэтому стараются жить в балансе, но в конечном итоге принимают одну из двух сторон.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нейтральный_злой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нейтральный_злой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>Такие персонажи славятся тем, что могут делать все, что взбредет им в голову. Их не волнует отношение со стороны, терзания совести и законы. Они становятся злыми по той причине, что просто хотят творить зло. Не важно какое.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Некротический -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Некротический">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Общий -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Общий">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Оглохший -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Оглохший">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Оглохшее существо ничего не слышит и автоматически проваливает все проверки характеристик, связанные со слухом.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огненный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огненный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огромный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огромный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+        <untitled-ontology-14:hasSizeCell rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</untitled-ontology-14:hasSizeCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Окаменевший -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Окаменевший">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <untitled-ontology-14:hasExtraStates rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Недееспособный"/>
+        <rdfs:comment>Окаменевшее существо, а также все немагические предметы, которые оно несёт или носит, трансформируется в твёрдое инертное вещество (как правило, в камень). Его вес увеличивается в 10 раз, и оно перестаёт стареть.
+Существо недееспособно, не способно двигаться и говорить, а также не осознаёт своё окружение.
+Броски атаки по существу совершаются с преимуществом.
+Существо автоматически проваливает спасброски Силы и Ловкости.
+Существо получает сопротивление ко всем видам урона.
+Существо получает иммунитет к ядам и болезням. Если яд или болезнь уже действовали на существо, их действие приостанавливается, но не исчезает.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Опутанный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Опутанный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Скорость опутанного существа равна 0, и оно не получает выгоды ни от каких бонусов к скорости.
+Броски атаки по такому существу совершаются с преимуществом, а его броски атаки — с помехой.
+Существо совершает с помехой спасброски Ловкости.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Орочий -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Орочий">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ослеплённый -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ослеплённый">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Ослеплённое существо ничего не видит и автоматически проваливает все проверки характеристик, связанные со зрением.
+Броски атаки по такому существу совершаются с преимуществом, а его броски атаки совершаются с помехой.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Отравленный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Отравленный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Отравленное существо совершает с помехой броски атаки и проверки характеристик.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Очарованный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Очарованный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Очарованное существо не может атаковать того, кто его очаровал, а также делать его целью умения или магического эффекта, причиняющего вред.
+Искуситель совершает с преимуществом все проверки характеристик при социальном взаимодействии с очарованным существом.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ошеломлённый -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ошеломлённый">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <untitled-ontology-14:hasExtraStates rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Недееспособный"/>
+        <rdfs:comment>Ошеломлённое существо недееспособно, не способно перемещаться и говорит, запинаясь.
+Существо автоматически проваливает спасброски Силы и Ловкости.
+Броски атаки по существу совершаются с преимуществом.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Парализованный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Парализованный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <untitled-ontology-14:hasExtraStates rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Недееспособный"/>
+        <rdfs:comment>Парализованное существо недееспособно и не способно перемещаться и говорить.
+Существо автоматически проваливает спасброски Силы и Ловкости.
+Броски атаки по парализованному существу совершаются с преимуществом.
+Любая атака, попавшая по такому существу, считается критическим попаданием, если нападающий находится в пределах 5 футов от существа.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Первичный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Первичный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Побережье -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Побережье">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Под_водой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Под_водой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Подземелья -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Подземелья">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Подземный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Подземный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Подземье -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Подземье">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Полуросликов -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Полуросликов">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Полярная_тундра -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Полярная_тундра">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Психическая_энергия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Психическая_энергия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Пустыня -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Пустыня">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Растение -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Растение">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Растения, в контексте вида монстров, — это растительные создания, а не обычная флора. Большая часть из них подвижна, а некоторые и плотоядны. Типичные растения — это ползающие насыпи и тренты. Грибковые существа, такие как газовые споры или микониды, также попадают в эту категорию.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Рубящий -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Рубящий">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Руины -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Руины">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Саламандра -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Саламандра">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огненный"/>
+        <untitled-ontology-14:hasLocation rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Подземье"/>
+        <untitled-ontology-14:hasRank rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#5"/>
+        <untitled-ontology-14:hasResistanceToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дробящий"/>
+        <untitled-ontology-14:hasResistanceToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Колющий"/>
+        <untitled-ontology-14:hasResistanceToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Рубящий"/>
+        <untitled-ontology-14:hasSize rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Большой"/>
+        <untitled-ontology-14:hasType rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Элементаль"/>
+        <untitled-ontology-14:hasVulnerabilityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Холодный"/>
+        <untitled-ontology-14:hasWorldview rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Нейтральный_злой"/>
+        <untitled-ontology-14:hasArmor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</untitled-ontology-14:hasArmor>
+        <untitled-ontology-14:hasCha rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</untitled-ontology-14:hasCha>
+        <untitled-ontology-14:hasCon rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</untitled-ontology-14:hasCon>
+        <untitled-ontology-14:hasDex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</untitled-ontology-14:hasDex>
+        <untitled-ontology-14:hasHp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</untitled-ontology-14:hasHp>
+        <untitled-ontology-14:hasInt rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</untitled-ontology-14:hasInt>
+        <untitled-ontology-14:hasStr rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18</untitled-ontology-14:hasStr>
+        <untitled-ontology-14:hasWis rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-14:hasWis>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Сбитый_с_ног -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Сбитый_с_ног">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Сбитое с ног существо способно перемещаться только ползком, пока не встанет, прервав тем самым это состояние.
+Существо совершает с помехой броски атаки.
+Броски атаки по существу совершаются с преимуществом, если нападающий находится в пределах 5 футов от него. В противном случае броски атаки совершаются с помехой.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Силовое_поле -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Силовое_поле">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Сильван -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Сильван">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Слизь -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Слизь">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Слизь хорошо чувствует себя в темноте, избегая солнечных областей и экстремальных температур. Она течёт по влажным подземельям, питаясь всем, что можно растворить, крадётся по земле, капает со стен и потолков, собирается у краёв подземных бассейнов и просачивается через щели. Первым предупреждением для искателя приключений о присутствия слизи является жгучая боль от её кислотного касания.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Средний -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Средний">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Size"/>
+        <untitled-ontology-14:hasSizeCell rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</untitled-ontology-14:hasSizeCell>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Стая_крошечных_зверей -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Стая_крошечных_зверей">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Рой - это скопление различных существ которые перемещаются и атакуют одновременно.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Схваченный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Схваченный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#States"/>
+        <rdfs:comment>Скорость схваченного существа равна 0, и оно не получает выгоды ни от каких бонусов к скорости.
+Состояние оканчивается, если схвативший становится недееспособен.
+Это состояние также оканчивается, если какой-либо эффект выводит схваченное существо из зоны досягаемости того, кто его удерживает, или из зоны удерживающего эффекта.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Тараск -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Тараск">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Дробящий"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Колющий"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огненный"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Рубящий"/>
+        <untitled-ontology-14:hasImmunityToDamage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ядовитый"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Испуганный"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Отравленный"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Очарованный"/>
+        <untitled-ontology-14:hasImmunityToState rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Парализованный"/>
+        <untitled-ontology-14:hasLocation rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Город"/>
+        <untitled-ontology-14:hasRank rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#30"/>
+        <untitled-ontology-14:hasSize rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Громадный"/>
+        <untitled-ontology-14:hasType rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Монстр"/>
+        <untitled-ontology-14:hasWorldview rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Истинно_нейтральный"/>
+        <untitled-ontology-14:hasArmor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</untitled-ontology-14:hasArmor>
+        <untitled-ontology-14:hasCha rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</untitled-ontology-14:hasCha>
+        <untitled-ontology-14:hasCon rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-14:hasCon>
+        <untitled-ontology-14:hasDex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</untitled-ontology-14:hasDex>
+        <untitled-ontology-14:hasHp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">676</untitled-ontology-14:hasHp>
+        <untitled-ontology-14:hasInt rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-14:hasInt>
+        <untitled-ontology-14:hasStr rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-14:hasStr>
+        <untitled-ontology-14:hasWis rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11</untitled-ontology-14:hasWis>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Тропики -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Тропики">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Фея -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Фея">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Феи — магические существа, тесно связанные с силами природы. Они живут в сумрачных рощах и туманных лесах. В некоторых мирах они тесно связаны со Страной Фей, которую также называют Планом Фей. Некоторые из них встречаются во Внешних Планах, в частности, на Арборее или в Звериных Землях. К феям относятся дриады, пикси и сатиры.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Хаотичный_добрый -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Хаотичный_добрый">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>Они действуют так, как подсказывает им чутье. Такие персонажи все еще остаются доброжелательными, и чаще всего сражаются за тех, чья победа практически невозможна.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Хаотичный_злой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Хаотичный_злой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>Подобные персонажи не знают, что такое рамки дозволенного. Все, что взбредет им в голову, будет исполнено от начала и до конца, со всей жестокостью, на которую они только способны. Страдания других в угоду утоления собственных потребностей — это единственное правило для подобных персонажей.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Хаотичный_нейтральный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Хаотичный_нейтральный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Worldview"/>
+        <rdfs:comment>Эти персонажи все также действуют по велению своего собственного мнения, однако они больше заботятся о себе, чем о других. Они не любят ограничения в принципе, но, если это касается их — они приходят в ярость. Забота о себе не делает их злыми, однако и не мотивирует помогать остальным.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Холмовой_великан -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Холмовой_великан">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Enemy"/>
+        <untitled-ontology-14:hasLanguage rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Великаний"/>
+        <untitled-ontology-14:hasLocation rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Холмы"/>
+        <untitled-ontology-14:hasRank rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#5"/>
+        <untitled-ontology-14:hasSize rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Огромный"/>
+        <untitled-ontology-14:hasType rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Великан"/>
+        <untitled-ontology-14:hasWorldview rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Хаотичный_злой"/>
+        <untitled-ontology-14:hasArmor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13</untitled-ontology-14:hasArmor>
+        <untitled-ontology-14:hasCha rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-14:hasCha>
+        <untitled-ontology-14:hasCon rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19</untitled-ontology-14:hasCon>
+        <untitled-ontology-14:hasDex rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-14:hasDex>
+        <untitled-ontology-14:hasHp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">105</untitled-ontology-14:hasHp>
+        <untitled-ontology-14:hasInt rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-14:hasInt>
+        <untitled-ontology-14:hasStr rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21</untitled-ontology-14:hasStr>
+        <untitled-ontology-14:hasWis rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</untitled-ontology-14:hasWis>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Холмы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Холмы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Холодный -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Холодный">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Электрический -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Электрический">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Элементаль -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Элементаль">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Type"/>
+        <rdfs:comment>Элементали — это воплощения стихий, которые составляют вселенную: воздух, земля, огонь и вода. Являясь чуть более, чем живой энергией на своих родных планах существования, они могут быть призваны заклинателями и могущественными существами, чтобы принять определённую форму и исполнять поручения.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Эльфийский -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Эльфийский">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ядовитый -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Ядовитый">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Damage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#1/2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#1/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#1/4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#1/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#1/8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#1/8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5900</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7200</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8400</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11500</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">450</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">62000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">105000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#29">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">135000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">700</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#30">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">155000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1100</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1800</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2300</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2900</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3900</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Rank"/>
+        <untitled-ontology-14:hasRankEx rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5000</untitled-ontology-14:hasRankEx>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Равнина/луг -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Равнина/луг">
+        <rdf:type rdf:resource="http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#Location"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

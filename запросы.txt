@@ -1,0 +1,9 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ont: <http://www.semanticweb.org/demas/ontologies/2024/9/untitled-ontology-14#>
+
+SELECT ?Enemy
+WHERE {
+    ?Enemy ont:hasType ont:Нежить ;
+           ont:hasRank ont:15 .
+}
