@@ -315,8 +315,8 @@ language_mapping = {
     'Гигантских орлов, понимает Общий и Воздушный но не может разговаривать': ['Общий'],
     'Гигантских лосей, понимает Общий, Эльфийский, и Сильван но не может разговаривать': ['Общий', 'Эльфийский', 'Сильван'],
     'Гигантских сов понимает Общий, Эльфийский и Сильван, но не может разговаривать': ['Общий', 'Эльфийский', 'Сильван'],
-    'Бездны, Гнолл': ['Бездны', 'Гнолл'],
-    'Гнолл': ['Гнолл'],
+    'Бездны, Гнолл': ['Бездны'],
+    'Гнолл': ['Гномий'],
     'Бездны': ['Бездны'],
     'Общий, Драконий, Сильван': ['Общий', 'Драконий', 'Сильван'],
     'Подземный': ['Подземный'],
@@ -368,6 +368,8 @@ def normalize_data(data):
         enemy['conditionImmune'] = condition_immune_mapping.get(enemy['conditionImmune'])
         enemy['languages'] = language_mapping.get(enemy['languages'])
         enemy['location'] = random.choice(locations)
+        if enemy['cr'] == "00":
+            enemy['cr'] = "0"
     return data
 
 def xml_to_dict(element):
@@ -405,7 +407,7 @@ file_path = 'monsters.xml'
 data = parse_xml(file_path)
 data = normalize_data(data)
 
-onto = get_ontology("Ontology_dnd_test.owl").load()
+onto = get_ontology("Ontology_dnd.owl").load()
 
 onto_classes_names = []
 for cls in onto.classes():
@@ -428,5 +430,25 @@ with onto:
         enemy.hasInt = monster['int']
         enemy.hasWis = monster['wis']
         enemy.hasCha = monster['cha']
+        enemy.hasLocation.append(onto[monster['location']])
+        enemy.hasSize.append(onto[monster['size']])
+        enemy.hasType.append(onto[monster['type']])
+        enemy.hasRank.append(onto[monster['cr']])
+        if monster['languages'] is not None:
+            for language in monster['languages']:
+                enemy.hasLanguage.append(onto[language])
+        if monster['resist'] is not None:
+            for resist in monster['resist']:
+                enemy.hasResistanceToDamage.append(onto[resist])
+        if monster['vulnerable'] is not None:
+            for vulnarable in monster['vulnerable']:
+                enemy.hasVulnerabilityToDamage.append(onto[vulnarable])
+        if monster['immune'] is not None:
+            for immune in monster['immune']:
+                enemy.hasImmunityToDamage.append(onto[immune])
+        if monster['conditionImmune'] is not None:
+            for conditionImmune in monster['conditionImmune']:
+                enemy.hasImmunityToState.append(onto[conditionImmune])
+        enemy.hasWorldview.append(onto[monster['alignment']])
 
-onto.save(file="Ontology_dnd_test_1.owl", format="rdfxml")
+onto.save(file="Ontology_dnd.owl", format="rdfxml")
