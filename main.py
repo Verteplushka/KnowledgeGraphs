@@ -354,7 +354,7 @@ language_mapping = {
 def normalize_data(data):
     locations = ['Болото', 'Город', 'Горы', 'Деревня', 'Лес', 'Побережье', 'Под_водой', 'Подземелья', 'Подземье',
          'Полярная_тундра', 'Пустыня', 'Равнина/луг', 'Руины', 'Тропики', 'Холмы']
-    random.seed(52)
+    random.seed(41)
     for enemy in data:
         enemy['size'] = size_mapping.get(enemy['size'])
         enemy['type'] = type_mapping.get(enemy['type'])
