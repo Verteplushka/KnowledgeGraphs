@@ -1,5 +1,6 @@
 from owlready2 import *
 import xml.etree.ElementTree as ET
+import random
 
 size_mapping = {
     'T': 'Крошечный',
@@ -336,7 +337,6 @@ language_mapping = {
 
 
 
-
 # onto = get_ontology("Ontology_dnd_test.owl").load()
 #
 # onto_classes_names = []
@@ -356,10 +356,11 @@ language_mapping = {
 #
 # onto.save(file="Ontology_dnd_test.owl", format="rdfxml")
 
-
-
 def normalize_data(data):
     enemies = []
+    locations = ['Болото', 'Город', 'Горы', 'Деревня', 'Лес', 'Побережье', 'Под_водой', 'Подземелья', 'Подземье',
+         'Полярная_тундра', 'Пустыня', 'Равнина/луг', 'Руины', 'Тропики', 'Холмы']
+    random.seed(52)
     for enemy in data:
         enemy['size'] = size_mapping.get(enemy['size'])
         enemy['type'] = type_mapping.get(enemy['type'])
@@ -372,8 +373,9 @@ def normalize_data(data):
         enemy['immune'] = damage_type_mapping.get(enemy['immune'])
         enemy['conditionImmune'] = condition_immune_mapping.get(enemy['conditionImmune'])
         enemy['languages'] = language_mapping.get(enemy['languages'])
-        if enemy['languages'] not in enemies:
-            enemies.append(enemy['languages'])
+        enemy['location'] = random.choice(locations)
+        if enemy['immune'] not in enemies:
+            enemies.append(enemy['immune'])
 
     print(data)
     print(enemies)
@@ -398,7 +400,6 @@ def xml_to_dict(element):
             result[attribute] = None
     return result
 
-
 def parse_xml(file_path):
     try:
         tree = ET.parse(file_path)
@@ -411,7 +412,6 @@ def parse_xml(file_path):
         print(f"Ошибка парсинга XML: {e}")
     except Exception as e:
         print(f"Произошла ошибка: {e}")
-
 
 file_path = 'monsters.xml'
 data = parse_xml(file_path)
