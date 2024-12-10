@@ -130,8 +130,11 @@ def normalize_data(data):
         enemy['size'] = size_mapping.get(enemy['size'])
         enemy['type'] = type_mapping.get(enemy['type'])
         enemy['alignment'] = alignment_mapping.get(enemy['alignment'])
-        if enemy['alignment'] not in enemies:
-            enemies.append(enemy['alignment'])
+        pattern = r"^\d+"
+        enemy['ac'] = re.match(pattern, enemy['ac']).group(0)
+        enemy['hp'] = re.match(pattern, enemy['hp']).group(0)
+        if enemy['resist'] not in enemies:
+            enemies.append(enemy['resist'])
 
     print(data)
     print(enemies)
@@ -143,7 +146,7 @@ def xml_to_dict(element):
     if name_element is not None and name_element.text:
         result['name'] = name_element.text.strip()
     attributes = [
-        'size', 'type', 'alignment', 'ac', 'hp', 'speed', 'str', 'dex', 'con',
+        'size', 'type', 'alignment', 'ac', 'hp', 'str', 'dex', 'con',
         'int', 'wis', 'cha', 'resist', 'vulnerable', 'immune',
         'conditionImmune', 'languages', 'cr'
     ]
