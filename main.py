@@ -1,5 +1,6 @@
 from owlready2 import *
 import xml.etree.ElementTree as ET
+import random
 
 size_mapping = {
     'T': 'Крошечный',
@@ -282,9 +283,6 @@ condition_immune_mapping = {
     'poisoned': ['Отравленный']
 }
 
-
-
-
 # onto = get_ontology("Ontology_dnd_test.owl").load()
 #
 # onto_classes_names = []
@@ -304,10 +302,11 @@ condition_immune_mapping = {
 #
 # onto.save(file="Ontology_dnd_test.owl", format="rdfxml")
 
-
-
 def normalize_data(data):
     enemies = []
+    locations = ['Болото', 'Город', 'Горы', 'Деревня', 'Лес', 'Побережье', 'Под_водой', 'Подземелья', 'Подземье',
+         'Полярная_тундра', 'Пустыня', 'Равнина/луг', 'Руины', 'Тропики', 'Холмы']
+    random.seed(52)
     for enemy in data:
         enemy['size'] = size_mapping.get(enemy['size'])
         enemy['type'] = type_mapping.get(enemy['type'])
@@ -316,9 +315,10 @@ def normalize_data(data):
         enemy['ac'] = re.match(pattern, enemy['ac']).group(0)
         enemy['hp'] = re.match(pattern, enemy['hp']).group(0)
         enemy['resist'] = damage_type_mapping.get(enemy['resist'])
-        enemy['conditionImmune'] = condition_immune_mapping.get(enemy['conditionImmune'])
         enemy['vulnerable'] = damage_type_mapping.get(enemy['vulnerable'])
         enemy['immune'] = damage_type_mapping.get(enemy['immune'])
+        enemy['conditionImmune'] = condition_immune_mapping.get(enemy['conditionImmune'])
+        enemy['location'] = random.choice(locations)
         if enemy['immune'] not in enemies:
             enemies.append(enemy['immune'])
 
@@ -345,7 +345,6 @@ def xml_to_dict(element):
             result[attribute] = None
     return result
 
-
 def parse_xml(file_path):
     try:
         tree = ET.parse(file_path)
@@ -358,7 +357,6 @@ def parse_xml(file_path):
         print(f"Ошибка парсинга XML: {e}")
     except Exception as e:
         print(f"Произошла ошибка: {e}")
-
 
 file_path = 'monsters.xml'
 data = parse_xml(file_path)
