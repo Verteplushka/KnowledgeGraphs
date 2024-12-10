@@ -351,27 +351,7 @@ language_mapping = {
     'Бездны, Общий, Драконий': ['Бездны', 'Общий', 'Драконий']
 }
 
-# onto = get_ontology("Ontology_dnd_test.owl").load()
-#
-# onto_classes_names = []
-# for cls in onto.classes():
-#     onto_classes_names.append(cls.name)
-#
-# print(onto_classes_names)
-#
-# with onto:
-#     if "Enemy" in onto_classes_names:
-#         Enemy = onto.Enemy
-#     else:
-#         print("Класс Enemy не найден, создайте его сначала.")
-#         exit()
-#
-#     goblin = Enemy("Goblin")
-#
-# onto.save(file="Ontology_dnd_test.owl", format="rdfxml")
-
 def normalize_data(data):
-    enemies = []
     locations = ['Болото', 'Город', 'Горы', 'Деревня', 'Лес', 'Побережье', 'Под_водой', 'Подземелья', 'Подземье',
          'Полярная_тундра', 'Пустыня', 'Равнина/луг', 'Руины', 'Тропики', 'Холмы']
     random.seed(52)
@@ -388,13 +368,7 @@ def normalize_data(data):
         enemy['conditionImmune'] = condition_immune_mapping.get(enemy['conditionImmune'])
         enemy['languages'] = language_mapping.get(enemy['languages'])
         enemy['location'] = random.choice(locations)
-        if enemy['immune'] not in enemies:
-            enemies.append(enemy['immune'])
-
-    print(data)
-    print(enemies)
-    print(len(enemies))
-
+    return data
 
 def xml_to_dict(element):
     result = {}
@@ -429,5 +403,30 @@ def parse_xml(file_path):
 
 file_path = 'monsters.xml'
 data = parse_xml(file_path)
-normalize_data(data)
+data = normalize_data(data)
 
+onto = get_ontology("Ontology_dnd_test.owl").load()
+
+onto_classes_names = []
+for cls in onto.classes():
+    onto_classes_names.append(cls.name)
+
+with onto:
+    if "Enemy" in onto_classes_names:
+        Enemy = onto.Enemy
+    else:
+        print("Класс Enemy не найден, создайте его сначала.")
+        exit()
+
+    for monster in data:
+        enemy = Enemy(monster['name'].replace(" ", "_").replace("(", "").replace(")", ""))
+        enemy.hasArmor = monster['ac']
+        enemy.hasHp = monster['hp']
+        enemy.hasStr = monster['str']
+        enemy.hasdex = monster['dex']
+        enemy.hasCon = monster['con']
+        enemy.hasInt = monster['int']
+        enemy.hasWis = monster['wis']
+        enemy.hasCha = monster['cha']
+
+onto.save(file="Ontology_dnd_test_1.owl", format="rdfxml")
