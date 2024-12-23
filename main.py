@@ -407,7 +407,7 @@ file_path = 'monsters.xml'
 data = parse_xml(file_path)
 data = normalize_data(data)
 
-onto = get_ontology("Ontology_dnd.owl").load()
+onto = get_ontology('Ontology_dnd_sourse.owl').load()
 
 onto_classes_names = []
 for cls in onto.classes():
